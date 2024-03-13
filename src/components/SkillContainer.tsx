@@ -89,9 +89,9 @@ export default function SkillContainer() {
           <Card
             as="li"
             key={items.name}
-            className="rounded-lg bg-white p-3 dark:bg-zinc-800/50"
+            className="rounded-lg bg-white p-3 "
           >
-            <h2 className="m-3  text-center text-base font-semibold text-zinc-800 dark:text-zinc-100">
+            <h2 className="m-3  text-center text-base font-semibold text-zinc-800 ">
               <Card>{items.name}</Card>
             </h2>
           </Card>
@@ -108,9 +108,9 @@ export default function SkillContainer() {
           <Card
             as="li"
             key={frameworks.name}
-            className="rounded-lg bg-white p-3 dark:bg-zinc-800/50"
+            className="rounded-lg bg-white p-3 "
           >
-            <h2 className="m-3  text-center text-base font-semibold text-zinc-800 dark:text-zinc-100">
+            <h2 className="m-3  text-center text-base font-semibold text-zinc-800 ">
               <Card>{frameworks.name}</Card>
             </h2>
           </Card>
@@ -127,9 +127,9 @@ export default function SkillContainer() {
           <Card
             as="li"
             key={backends.name}
-            className="rounded-lg bg-white p-3 dark:bg-zinc-800/50"
+            className="rounded-lg bg-white p-3 "
           >
-            <h2 className="m-3  text-center text-base font-semibold text-zinc-800 dark:text-zinc-100">
+            <h2 className="m-3  text-center text-base font-semibold text-zinc-800 ">
               <Card>{backends.name}</Card>
             </h2>
           </Card>
@@ -146,9 +146,9 @@ export default function SkillContainer() {
           <Card
             as="li"
             key={items.name}
-            className="rounded-lg bg-white p-3 dark:bg-zinc-800/50"
+            className="rounded-lg bg-white p-3 "
           >
-            <h2 className="m-3  text-center text-base font-semibold text-zinc-800 dark:text-zinc-100">
+            <h2 className="m-3  text-center text-base font-semibold text-zinc-800 ">
               <Card>{items.name}</Card>
             </h2>
           </Card>

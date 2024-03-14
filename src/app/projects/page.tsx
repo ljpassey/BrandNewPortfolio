@@ -1,3 +1,5 @@
+
+
 import { type Metadata } from 'next'
 import Image from 'next/image'
 
@@ -8,28 +10,38 @@ import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import github from "@/images/logos/github.svg"
 
 const projects = [
   {
     name: 'Temp-Finder',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: '#', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'Temp-Finder is a Full Stack Web Application that easily connects Dental Hygienists looking for temporary work with Dental Offices in need of Hygienists.',
+    link: {
+      href: 'https://github.com/ljpassey/Tempo-Capstone-Project',
+      label: 'github.com',
+    },
+    logo: github,
   },
   {
     name: 'Dates For Days',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'Dates For Days is an interactive date night idea generator that allows users to generate and save random date night ideas, as well as contribute custom ideas of their own.',
+    link: {
+      href: 'https://github.com/ljpassey/dates-for-days-Capstone-Project',
+      label: 'github.com',
+    },
+    logo: github,
   },
   {
-    name: 'HelioStream',
+    name: 'Gridlock',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+      'Gridlock is a game built using Angular and TypeScript that takes a unique spin on chess.',
+    link: {
+      href: 'https://github.com/ljpassey/CollaborationCoders/tree/main/game',
+      label: 'github.com',
+    },
+    logo: github,
   },
 ]
 
@@ -48,13 +60,13 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description: 'These are some of the projects that I have been working on recently.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
+      title="These are some of the projects that I have been working on recently."
       intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
     >
       <ul
@@ -67,12 +79,12 @@ export default function Projects() {
               <Image
                 src={project.logo}
                 alt=""
-                className="h-8 w-8"
+                className="h-8 w-8 bg-white rounded-full"
                 unoptimized
               />
             </div>
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <Card.Link href={project.link.href}>{project.name}</Card.Link>
+              <Card.Link target="_blank" href={project.link.href}>{project.name}</Card.Link>
             </h2>
             <Card.Description>{project.description}</Card.Description>
             <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
@@ -82,7 +94,6 @@ export default function Projects() {
           </Card>
         ))}
       </ul>
- 
     </SimpleLayout>
   )
 }

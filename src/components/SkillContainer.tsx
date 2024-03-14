@@ -75,6 +75,27 @@ const backends = [
   },
 ]
 
+const tools = [
+  {
+    name: 'Salesforce',
+  },
+  {
+    name: 'AWS',
+  },
+  {
+    name: 'Jira',
+  },
+  {
+    name: 'Figma',
+  },
+  {
+    name: 'Firebase',
+  },
+  {
+    name: 'Postman',
+  },
+]
+
 export default function SkillContainer() {
   return (
     <div className="h-auto rounded-xl border border-zinc-100 bg-zinc-100/50 p-3 shadow-lg dark:border-zinc-700/50 dark:bg-zinc-800/50">
@@ -138,14 +159,14 @@ export default function SkillContainer() {
         role="list"
         className="mx-auto grid grid-cols-2 gap-5 p-2 sm:grid-cols-3"
       >
-        {items.map((items) => (
+        {tools.map((tools) => (
           <Card
             as="li"
-            key={items.name}
+            key={tools.name}
             className="items-center rounded-2xl bg-white "
           >
             <h2 className="m-3  text-center text-base font-semibold text-zinc-800 ">
-              <Card>{items.name}</Card>
+              <Card>{tools.name}</Card>
             </h2>
           </Card>
         ))}

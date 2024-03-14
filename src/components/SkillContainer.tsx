@@ -79,7 +79,7 @@ const backends = [
 
 export default function SkillContainer() {
   return (
-    <div className="h-auto rounded-xl border border-zinc-100 bg-zinc-100/50 shadow-lg dark:border-zinc-700/50 dark:bg-zinc-800/50">
+    <div className="h-auto rounded-xl border border-zinc-100 bg-zinc-100/50 p-3 shadow-lg dark:border-zinc-700/50 dark:bg-zinc-800/50">
       <div className="m-3 text-center text-lg font-bold ">Languages</div>
       <div
         role="list"

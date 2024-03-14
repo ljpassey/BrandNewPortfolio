@@ -79,8 +79,6 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-
-
 function SocialLink({
   icon: Icon,
   ...props
@@ -98,7 +96,7 @@ function Newsletter() {
   return (
     <form
       action="/thank-you"
-      className="rounded-2xl bg-zinc-100/50 border shadow-lg dark:bg-zinc-800/50 border-zinc-100 p-6 dark:border-zinc-700/40"
+      className="rounded-2xl border border-zinc-100 bg-zinc-100/50 p-6 shadow-lg dark:border-zinc-700/40 dark:bg-zinc-800/50"
     >
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <MailIcon className="h-6 w-6 flex-none" />
@@ -204,7 +202,7 @@ function Resume() {
   ]
 
   return (
-    <div className="rounded-2xl bg-zinc-100/50 dark:bg-zinc-800/50 shadow-lg border border-zinc-100 p-6 dark:border-zinc-700/40">
+    <div className="rounded-2xl border border-zinc-100 bg-zinc-100/50 p-6 shadow-lg dark:border-zinc-700/40 dark:bg-zinc-800/50">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Work</span>
@@ -226,7 +224,7 @@ function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
 
   return (
-    <div className="mt-16 sm:mt-20 px-5">
+    <div className="mt-16 px-5 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
         {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
           <div
@@ -291,11 +289,7 @@ export default async function Home() {
         <ProjectsCTA />
         <div className=" grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <SkillContainer />
-          {/* <div className="flex flex-col gap-16">
-            {articles.map((article) => (
-              <Article key={article.slug} article={article} />
-            ))}
-          </div> */}
+
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter />
             <Resume />

@@ -89,7 +89,7 @@ export default function SkillContainer() {
           <Card
             as="li"
             key={items.name}
-            className="rounded-lg bg-white p-3 "
+            className="items-center rounded-2xl bg-white "
           >
             <h2 className="m-3  text-center text-base font-semibold text-zinc-800 ">
               <Card>{items.name}</Card>
@@ -108,7 +108,7 @@ export default function SkillContainer() {
           <Card
             as="li"
             key={frameworks.name}
-            className="rounded-lg bg-white p-3 "
+            className="items-center rounded-2xl bg-white "
           >
             <h2 className="m-3  text-center text-base font-semibold text-zinc-800 ">
               <Card>{frameworks.name}</Card>
@@ -127,7 +127,7 @@ export default function SkillContainer() {
           <Card
             as="li"
             key={backends.name}
-            className="rounded-lg bg-white p-3 "
+            className="items-center rounded-2xl bg-white"
           >
             <h2 className="m-3  text-center text-base font-semibold text-zinc-800 ">
               <Card>{backends.name}</Card>
@@ -135,9 +135,7 @@ export default function SkillContainer() {
           </Card>
         ))}
       </div>
-      <div className="m-3 text-center text-lg font-bold ">
-        Tools/Software
-      </div>
+      <div className="m-3 text-center text-lg font-bold ">Tools/Software</div>
       <div
         role="list"
         className="mx-auto grid grid-cols-2 gap-5 p-2 sm:grid-cols-3"
@@ -146,7 +144,7 @@ export default function SkillContainer() {
           <Card
             as="li"
             key={items.name}
-            className="rounded-lg bg-white p-3 "
+            className="items-center rounded-2xl bg-white "
           >
             <h2 className="m-3  text-center text-base font-semibold text-zinc-800 ">
               <Card>{items.name}</Card>

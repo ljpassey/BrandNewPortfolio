@@ -286,7 +286,7 @@ export default function About() {
               icon={CodeIcon}
               className="mt-4 border-b border-zinc-100 pb-8 dark:border-zinc-700/40"
             >
-              Let's Collaborate!
+              Lets Collaborate!
             </SocialLink>
             <Resume />
           </ul>

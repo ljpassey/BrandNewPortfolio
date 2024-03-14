@@ -212,8 +212,13 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
+      <Button
+        href="https://drive.google.com/file/d/1rIOYv2u2MIA-YXGmRRyBlV3pCUej0T7V/view?usp=sharing"
+        variant="secondary"
+        target='_blank'
+        className="group mt-6 w-full"
+      >
+        Download Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>

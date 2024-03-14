@@ -1,16 +1,10 @@
-
-
 import { type Metadata } from 'next'
 import Image from 'next/image'
 
+import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import github from "@/images/logos/github.svg"
+import github from '@/images/logos/github.svg'
 
 const projects = [
   {
@@ -56,11 +50,10 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-
-
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'These are some of the projects that I have been working on recently.',
+  description:
+    'These are some of the projects that I have been working on recently.',
 }
 
 export default function Projects() {
@@ -79,12 +72,14 @@ export default function Projects() {
               <Image
                 src={project.logo}
                 alt=""
-                className="h-8 w-8 bg-white rounded-full"
+                className="h-8 w-8 rounded-full bg-white"
                 unoptimized
               />
             </div>
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <Card.Link target="_blank" href={project.link.href}>{project.name}</Card.Link>
+              <Card.Link target="_blank" href={project.link.href}>
+                {project.name}
+              </Card.Link>
             </h2>
             <Card.Description>{project.description}</Card.Description>
             <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">

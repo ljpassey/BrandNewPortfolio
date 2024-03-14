@@ -1,6 +1,4 @@
-import { SimpleLayout } from './SimpleLayout'
 import { Card } from './Card'
-import { Container } from './Container'
 
 const items = [
   {

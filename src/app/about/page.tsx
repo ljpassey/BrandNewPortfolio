@@ -3,18 +3,12 @@ import { type Metadata } from 'next'
 import Link from 'next/link'
 import clsx from 'clsx'
 import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
-
+import { FeaturedImageGallery } from '@/components/ImageGallery'
 import logoDunerise from '@/images/logos/dunerise.svg'
 import logoSamaritan from '@/images/logos/samaritan.png'
 import logoWeave from '@/images/logos/weave.png'
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  XIcon,
-} from '@/components/SocialIcons'
+import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 
 function SocialLink({
@@ -159,7 +153,7 @@ function Resume() {
   ]
 
   return (
-    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+    <div className="mt-8 rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Work</span>
@@ -169,8 +163,13 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
+      <Button
+        href="https://drive.google.com/file/d/1rIOYv2u2MIA-YXGmRRyBlV3pCUej0T7V/view?usp=sharing"
+        variant="secondary"
+        target="_blank"
+        className="group mt-6 w-full"
+      >
+        Download Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
@@ -188,6 +187,24 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
+function CodeIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="h-6 w-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M14.25 9.75 16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z"
+      />
+    </svg>
+  )
+}
 export const metadata: Metadata = {
   title: 'About',
   description: 'I am Luke Passey, a Full Stack Web Developer!',
@@ -230,15 +247,15 @@ export default function About() {
             </p>
             <p>
               In my free time I enjoy coding and developing personal projects,
-              playing the guitar, spending time outdoors fly fishing, and
+              taking pictures on my film camera, playing the guitar, fly fishing, and
               spending time with my wife and my cat Mochi. I am also an avid
               reader and enjoy learning about new technologies and tools in the
               field. I am always looking for new opportunities to learn and grow
               as a developer, and I am excited to see what the future holds!
             </p>
           </div>
-          <div className=" mt-10 ">
-            <Resume />
+          <div className="mt-10 grid ">
+            <FeaturedImageGallery />
           </div>
         </div>
         <div className="lg:pl-20">
@@ -264,6 +281,14 @@ export default function About() {
             >
               lukepassey.developer@gmail.com
             </SocialLink>
+            <SocialLink
+              href="mailto:lukepassey.developer@gmail.com"
+              icon={CodeIcon}
+              className="mt-4 border-b border-zinc-100 pb-8 dark:border-zinc-700/40"
+            >
+              Let's Collaborate!
+            </SocialLink>
+            <Resume />
           </ul>
         </div>
       </div>

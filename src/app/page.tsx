@@ -215,7 +215,7 @@ function Resume() {
       <Button
         href="https://drive.google.com/file/d/1rIOYv2u2MIA-YXGmRRyBlV3pCUej0T7V/view?usp=sharing"
         variant="secondary"
-        target='_blank'
+        target="_blank"
         className="group mt-6 w-full"
       >
         Download Resume
@@ -231,11 +231,11 @@ function Photos() {
   return (
     <div className="mt-16 px-5 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {[image2, image3, image4].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
+              'relative aspect-[9/10]   w-32  overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
               rotations[imageIndex % rotations.length],
             )}
           >
@@ -253,7 +253,6 @@ function Photos() {
 }
 
 export default async function Home() {
-  
   return (
     <>
       <Container className="mt-9">

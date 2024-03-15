@@ -247,11 +247,12 @@ export default function About() {
             </p>
             <p>
               In my free time I enjoy coding and developing personal projects,
-              taking pictures on my film camera, playing the guitar, fly fishing, and
-              spending time with my wife and my cat Mochi. I am also an avid
-              reader and enjoy learning about new technologies and tools in the
-              field. I am always looking for new opportunities to learn and grow
-              as a developer, and I am excited to see what the future holds!
+              taking pictures on my film camera, playing the guitar, fly
+              fishing, and spending time with my wife and my cat Mochi. I am
+              also an avid reader and enjoy learning about new technologies and
+              tools in the field. I am always looking for new opportunities to
+              learn and grow as a developer, and I am excited to see what the
+              future holds!
             </p>
           </div>
           <div className="mt-10 grid ">

@@ -8,11 +8,9 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: '%s - Luke Passey',
-    default:
-      'Luke Passey - Portfolio',
+    default: 'Luke Passey - Portfolio',
   },
-  description:
-    '',
+  description: '',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

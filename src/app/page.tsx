@@ -256,7 +256,7 @@ export default async function Home() {
   return (
     <>
       <Container className="mt-9">
-        <div className="">
+        <div className="mt-16 sm:mt-32">
           <h1 className="max-w-2xl text-left text-3xl font-bold text-zinc-800 sm:text-5xl dark:text-zinc-100">
             Full Stack Web Developer <br /> Software Engineer
             <br /> Film Photographer
@@ -292,7 +292,6 @@ export default async function Home() {
         <ProjectsCTA />
         <div className=" grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <SkillContainer />
-
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Resume />
             <Newsletter />

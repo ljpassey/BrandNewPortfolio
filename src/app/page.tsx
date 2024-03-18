@@ -266,7 +266,7 @@ export default async function Home() {
             Welcome to my portfolio page! My name is Luke Passey and I am a
             Full-Stack Web Developer and Software Engineer who specializes in both
             front-end and
-            back-end web development. Below, you'll find
+            back-end web development. Below, you will find
             links to view some of my recent projects and learn more about me!
             Likewise, you can also find my work history, resume, and a list of
             my skills and technologies below. Connect with me on LinkedIn if you have any questions or would like to chat!

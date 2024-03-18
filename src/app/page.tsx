@@ -262,16 +262,14 @@ export default async function Home() {
             <br /> Film Photographer
             <br /> Husband <br /> and Cat Dad.
           </h1>
-          <p className="mt-6 text-pretty text-base text-zinc-600 dark:text-zinc-400">
-            My name is Luke Passey and I am a full-stack software engineer/web
-            developer who specializes in both front-end web development
-            (JavaScript, React, HTML, CSS) and back-end development (SQL,
-            PostgreSQL, Node.js) and has experience working in Agile
-            environments (but I am comfortable with Waterfall, Lean, and Product
-            Driven Development methodologies), and am passionate about the
-            software development process! I am always striving to refine my
-            skills and write cleaner code, and creating thoughtful and elegant
-            solutions to problems through software is what makes me excited!
+          <p className="mt-6 max-w-2xl text-pretty text-left text-zinc-600 dark:text-zinc-400">
+            Welcome to my portfolio page! My name is Luke Passey and I am a
+            Full-Stack Web Developer and Software Engineer who specializes in both
+            front-end and
+            back-end web development. Below, you'll find
+            links to view some of my recent projects and learn more about me!
+            Likewise, you can also find my work history, resume, and a list of
+            my skills and technologies below. Connect with me on LinkedIn if you have any questions or would like to chat!
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

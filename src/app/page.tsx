@@ -262,7 +262,7 @@ export default async function Home() {
             <br /> Film Photographer
             <br /> Husband <br /> and Cat Dad.
           </h1>
-          <p className="mt-6 max-w-2xl text-pretty text-left text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 max-w-2xl text-pretty text-base text-zinc-600 dark:text-zinc-400">
             Welcome to my portfolio page! My name is Luke Passey and I am a
             Full-Stack Web Developer and Software Engineer who specializes in both
             front-end and

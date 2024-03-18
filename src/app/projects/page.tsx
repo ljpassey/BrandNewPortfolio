@@ -32,7 +32,7 @@ const projects = [
     description:
       'Gridlock is a game built using Angular and TypeScript that takes a unique spin on chess.',
     link: {
-      href: 'https://github.com/ljpassey/CollaborationCoders/tree/main/game',
+      href: 'https://github.com/ljpassey/CollaborationCoders/tree/main/gridlock',
       label: 'github.com',
     },
     logo: github,
